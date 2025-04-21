@@ -1,12 +1,13 @@
 import React, { useState, useEffect, useRef, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
-import TopNav from "./templates/topnav";
+
 import Dropdown from "./templates/Dropdown";
 import axios from "../src/utensis/Axious";
 import Loading from "./loading";
 import Verticalcards from "./templates/Verticalcards";
 import { useDispatch } from "react-redux";
 import { getMovie } from "../src/actions/movieAction";
+import Navtop from "./templates/Navtop";
 
 const Tempo = () => {
   const navigate = useNavigate();
@@ -102,7 +103,7 @@ const Tempo = () => {
           <h1 className="text-2xl text-zinc-500 font-bold">Trending</h1>
         </div>
         <div className="flex items-center gap-4">
-          <TopNav />
+          <Navtop />
           <Dropdown
             title="category"
             options={["movie", "tv"]}

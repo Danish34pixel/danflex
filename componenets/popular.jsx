@@ -3,8 +3,9 @@ import { useNavigate } from "react-router-dom";
 import axios from "../src/utensis/Axious";
 import Loading from "./loading";
 import Verticalcards from "./templates/Verticalcards";
-import TopNav from "./templates/topnav";
+
 import Dropdown from "./templates/Dropdown";
+import Navtop from "./templates/Navtop";
 
 const Popular = () => {
   const navigate = useNavigate();
@@ -90,7 +91,7 @@ const Popular = () => {
           <h1 className="text-2xl text-zinc-500 font-bold">Popular</h1>
         </div>
         <div className="flex items-center gap-4">
-          <TopNav />
+          <Navtop />
           <Dropdown
             title="category"
             options={["movie", "tv"]}

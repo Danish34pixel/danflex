@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "../../src/utensis/Axious";
 
-const TopNav = ({ setIsSideNavOpen }) => {
+const Navtop = ({ setIsSideNavOpen }) => {
   const [query, setQuery] = useState("");
   const [search, setSearch] = useState(false);
   const [suggestions, setSuggestions] = useState([]);
@@ -133,4 +133,4 @@ const TopNav = ({ setIsSideNavOpen }) => {
   );
 };
 
-export default TopNav;
+export default Navtop;

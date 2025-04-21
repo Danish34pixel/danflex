@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import Sidenav from "./templates/Sidenav";
-import TopNav from "./templates/topnav";
 import axios from "../src/utensis/Axious";
 import Header from "./templates/Header";
 import HorizontalCards from "./templates/horinzontallCards";
 import Loading from "./loading";
+import Navtop from "./templates/Navtop";
 
 const Dashboard = () => {
   document.title = "Dashboard";
@@ -99,7 +99,7 @@ const Dashboard = () => {
           isSideNavOpen ? "ml-[240px]" : "ml-0"
         } ${isMobile ? "mt-16" : ""}`}
       >
-        <TopNav
+        <Navtop
           setIsSideNavOpen={setIsSideNavOpen}
           searchQuery={searchQuery}
           setSearchQuery={setSearchQuery}
