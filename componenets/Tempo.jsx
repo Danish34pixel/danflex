@@ -8,7 +8,7 @@ import Verticalcards from "./templates/Verticalcards";
 import { useDispatch } from "react-redux";
 import { getMovie } from "../src/actions/movieAction";
 
-const Trending = () => {
+const Tempo = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const [category, setCategory] = useState("movie");
@@ -136,4 +136,4 @@ const Trending = () => {
   );
 };
 
-export default Trending;
+export default Tempo;

@@ -2,7 +2,6 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import Dashboard from "../componenets/Dashboard";
-import Trending from "../componenets/trending";
 import Popular from "../componenets/popular";
 import Toprated from "../componenets/Toprated";
 import Upcoming from "../componenets/Upcoming";
@@ -11,6 +10,7 @@ import TvShows from "../componenets/Tv-shows";
 import Movies from "../componenets/movie";
 import MovieDetails from "../componenets/movieDetails";
 import TvDetails from "../componenets/tvDetails";
+import Tempo from "../componenets/Tempo";
 
 export default function App() {
   return (
@@ -18,7 +18,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Dashboard />} />
         <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/trending" element={<Trending />} />
+        <Route path="/trending" element={<Tempo />} />
         <Route path="/popular" element={<Popular />} />
         <Route path="/top-rated" element={<Toprated />} />
         <Route path="/upcoming" element={<Upcoming />} />
